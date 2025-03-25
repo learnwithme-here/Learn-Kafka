@@ -1,4 +1,4 @@
-Welcome to my GitHub! Here, you'll find repositories covering Apache Kafka, including:  
+Welcome to my GitHub! Here, you'll find this repository covering Apache Kafka, including:  
 
 Architecture & Core Concepts 📜  
 Kafka Producers & Consumers ⚡  
