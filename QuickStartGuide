@@ -1,0 +1,15 @@
+Apache Kafka without Zookeeper Quickstart Guide
+
+Step1: Download Kafka: https://kafka.apache.org/downloads
+Step2: Download Java : Suggestion: you can use open jdk 17 or higher
+> open vi ~/.bashrc 
+add these two lines in your bashrc file to setup Java
+	export JAVA_HOME=/<path>/java_directory
+	export PATH=${PATH}:${JAVA_HOME}/bin
+
+Step3: Generate a Cluster UUID: KAFKA_CLUSTER_ID="$(bin/kafka-storage.sh random-uuid)"
+Step5: Format Log Directories: bin/kafka-storage.sh format --standalone -t $KAFKA_CLUSTER_ID -c config/server.properties
+Step6: Start the Kafka Server: bin/kafka-server-start.sh config/server.properties
+Step7: Create a topic to store your events: bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092
+Step8: Publish/Write some messages into the topic: bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092
+Step9: Consumer/Read the published messages:  bin/kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
