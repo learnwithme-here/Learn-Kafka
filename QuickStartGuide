@@ -1,4 +1,4 @@
-Apache Kafka without Zookeeper Quickstart Guide
+### Apache Kafka without Zookeeper Quickstart Guide ###
 
 Step1: Download Kafka: https://kafka.apache.org/downloads
 Step2: Download Java : Suggestion: you can use open jdk 17 or higher
