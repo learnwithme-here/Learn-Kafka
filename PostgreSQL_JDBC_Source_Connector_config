@@ -16,7 +16,7 @@
 	"topic.prefix": "<enter_topic_prefix eg; source_>",
 	"poll.interval.ms": "60000",
 	"name": "postgres_source",
-	"connection.url": "jdbc:postgresql://<ip_address/hostname>:<port>/postgres",
+	"connection.url": "jdbc:postgresql://<ip_address/hostname>:<port>/<database_name>",
   "connection.user":"<Enter_user_name>",
   "connection.password":"<Enter_Password>",
 	"transforms.ValueToKey.type": "org.apache.kafka.connect.transforms.ValueToKey"
