@@ -1,0 +1,18 @@
+{
+	"connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+	"table.name.format": "<Enter_target_table_name>",
+	"tasks.max": "1",
+	"topics": "<Enter_topic_to_consume_data_from>",
+	"fields.whitelist": "list of fields to whitelist",
+	"auto.evolve": "true",
+	"name": "postgres_sink",
+	"value.converter.schemas.enable": "false",
+	"auto.create": "true",
+	"connection.url": "jdbc:postgresql://<ip_address/hostname>:<port>/postgres",
+  "connection.user":"<Enter_username>,
+  "connection.password":"<Enter_Password>",
+	"value.converter": "org.apache.kafka.connect.json.JsonConverter",
+	"insert.mode": "upsert",
+	"pk.mode": "record_key",
+	"pk.fields": "<Enter primary key columns eg; column id"
+}
