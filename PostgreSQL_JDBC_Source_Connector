@@ -1,0 +1,23 @@
+{
+	"connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
+	"timestamp.column.name": "<enter timestamp column for incremental capture eg; column last_updated>",
+	"incrementing.column.name": "<enter_incremental_column_name, eg; primary key column id> ",
+	"validate.non.null": "true",
+	"tasks.max": "1",
+	"connection.attempts": "3",
+	"transforms": "ValueToKey",
+	"batch.max.rows": "500",
+	"connection.backoff.ms": "3000",
+	"table.types": "TABLE",
+	"transforms.ValueToKey.fields": "id",
+	"table.whitelist": "<Enter_table_name>",
+	"mode": "incrementing",
+	"connection.loginTimeout": "10",
+	"topic.prefix": "<enter_topic_prefix eg; source_>",
+	"poll.interval.ms": "60000",
+	"name": "postgres_source",
+	"connection.url": "jdbc:postgresql://<ip_address/hostname>:<port>/postgres",
+  "connection.user":"<Enter_user_name>",
+  "connection.password":"<Enter_Password>",
+	"transforms.ValueToKey.type": "org.apache.kafka.connect.transforms.ValueToKey"
+}
