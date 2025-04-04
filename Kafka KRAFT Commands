@@ -37,6 +37,7 @@ bin/kafka-console-consumer.sh --topic test1 --from-beginning --bootstrap-server 
 bin/connect-distributed.sh config/connect-distributed.properties
 
 ##Kafka UI
-nohup /<path>/bin/java -Dspring.config.additional-location=/<path>/application.yaml -Dserver.port=8080 --add-opens java.rmi/javax.rmi.ssl=ALL-UNNAMED -jar /<path>/kafka-ui-api-v0.7.2.jar > kafkaui.logs &
+$JAVA_HOME/bin/java -Dspring.config.additional-location=application.yaml -Dserver.port=8080 --add-opens java.rmi/javax.rm
+i.ssl=ALL-UNNAMED -jar kafka-ui-api-v0.7.2.jar
 
 
