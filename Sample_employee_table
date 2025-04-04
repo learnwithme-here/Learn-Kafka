@@ -1,0 +1,20 @@
+CREATE TABLE employees (
+	id serial4 NOT NULL,
+	"name" varchar(100) NULL,
+	department varchar(100) NULL,
+	updated_at timestamp NULL,
+	CONSTRAINT employees_pkey PRIMARY KEY (id)
+);
+
+
+insert into employees values 
+(1,'Pat','DE','2025-01-01'),
+(2,'Mat','DE','2025-01-02'),
+(3,'Jon','DE','2025-01-03'),
+(4,'Rob','HR','2025-01-04'),
+(5,'Tom','HR','2025-01-05'),
+(6,'Bob','FI','2025-01-06'),
+(7,'Tam','FI','2025-01-07'),
+(8,'Cole','FI','2025-01-08'),
+(9,'Pat','IT','2025-01-09'),
+(10,'Sam','IT','2025-01-10')
