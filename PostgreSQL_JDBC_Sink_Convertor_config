@@ -6,7 +6,7 @@
 	"fields.whitelist": "list of fields to whitelist",
 	"auto.evolve": "true",
 	"name": "postgres_sink",
-	"value.converter.schemas.enable": "false",
+	"value.converter.schemas.enable": "true",
 	"auto.create": "true",
 	"connection.url": "jdbc:postgresql://<ip_address/hostname>:<port>/<database_name>",
   	"connection.user":"<Enter_username>,
